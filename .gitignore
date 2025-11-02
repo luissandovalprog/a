@@ -1,0 +1,89 @@
+# .gitignore - Sistema de Trazabilidad e Información de Partos y Recién Nacidos
+
+# Archivos de credenciales y configuración sensible
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+config.env
+*.env
+.envrc
+
+# Archivo de configuración de Django (si se genera localmente fuera de .env)
+settings_local.py
+local_settings.py
+
+# Archivo de base de datos SQLite (si se usa localmente, aunque tu proyecto usa PostgreSQL)
+db.sqlite3
+db.sqlite3-journal
+
+# Entorno virtual de Python (ajusta el nombre si lo creaste diferente)
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Paquetes instalados por pip (Python)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Carpeta de dependencias de Node.js (React)
+node_modules/
+
+# Archivos de compilación y distribución de React
+build/
+dist/
+*.min.js
+*.min.css
+
+# Archivos de cache de Node.js
+.npm
+.npmrc
+.nyc_output
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pip_log
+
+# Sistemas operativos
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editores de texto y IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
